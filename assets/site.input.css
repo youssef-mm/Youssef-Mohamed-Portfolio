@@ -1308,6 +1308,7 @@
 #projModal::backdrop { background: transparent; }
 #projModal .modal-panel { max-height: calc(100dvh - 2rem); }
 #mobileMenu { max-height: calc(100dvh - 5rem); overflow-y: auto; }
+#hero { overflow-x: clip; }
 #hero .hero-enter { opacity: 1; }
 .text-crimson { color: #fb5978; }
 #hero h1 .text-crimson { color: var(--crimson); }
