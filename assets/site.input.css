@@ -42,14 +42,7 @@
             background: rgba(15, 17, 23, 0.84);
             backdrop-filter: blur(16px);
             -webkit-backdrop-filter: blur(16px);
-            border-width: 1px;
-            border-style: solid;
-        }
-
-        @layer components {
-            .glass-box {
-                border-color: rgba(255, 255, 255, 0.08);
-            }
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
 
         .crimson-hover {
@@ -1315,9 +1308,10 @@
 #projModal::backdrop { background: transparent; }
 #projModal .modal-panel { max-height: calc(100dvh - 2rem); }
 #mobileMenu { max-height: calc(100dvh - 5rem); overflow-y: auto; }
-#hero { overflow-x: clip; }
 #hero .hero-enter { opacity: 1; }
-:focus-visible { outline: 2px solid var(--crimson); outline-offset: 3px; }
+.text-crimson { color: #fb5978; }
+#hero h1 .text-crimson { color: var(--crimson); }
+:focus-visible { outline: 2px solid #fb7185; outline-offset: 3px; }
 #cliInput { font-size: max(16px, .75rem); }
 .project-tab[aria-selected="true"] { scroll-margin-inline: 0.5rem; }
 .project-slide[hidden] { display: none; }
