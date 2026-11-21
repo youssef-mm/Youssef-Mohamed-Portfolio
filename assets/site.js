@@ -1953,6 +1953,7 @@ function openModal(key, trigger = document.activeElement) {
     if (!Object.hasOwn(projectDetails, key)) return;
     clearTimeout(modalCloseTimer);
     currentModalKey = key;
+    goToProjectPage(Object.keys(projectDetails).indexOf(key));
     renderProjectDetails(key);
 
     if (!projectDialog.open) {
