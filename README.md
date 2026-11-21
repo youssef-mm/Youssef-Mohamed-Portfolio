@@ -6,7 +6,7 @@ This project is a modern, responsive portfolio website showcasing my work, proje
 
 ## 🌐 Live Portfolio
 
-**Portfolio:** https://youssefmohamedai.vercel.app/
+**Portfolio:** https://www.youssefmohamedai.tech/
 
 ## 👨‍💻 About Me
 
@@ -77,14 +77,27 @@ Youssef-Mohamed-Portfolio/
 ├── index.html
 ├── favicon.png
 ├── profile-photo.jpeg
+├── Youssef_Mohamed_Resume.pdf
+├── assets/                 # Built CSS, site scripts, fonts, and responsive images
+├── tailwind.config.cjs
+├── robots.txt
+├── sitemap.xml
 └── README.md
+```
+
+## Local development
+
+Serve the repository root with any static HTTP server. The compiled stylesheet is already checked in. When changing utility classes or site styles, regenerate it with:
+
+```sh
+npx --yes tailwindcss@3.4.19 -c tailwind.config.cjs -i assets/site.input.css -o assets/site.css --minify
 ```
 
 ## 🔗 Connect With Me
 
 - **LinkedIn:** https://www.linkedin.com/in/youssef-mohamed-mm/
 - **GitHub:** https://github.com/youssef-mm
-- **Portfolio:** https://youssefmohamedai.vercel.app/
+- **Portfolio:** https://www.youssefmohamedai.tech/
 - **Email:** yousseefmohammed7@gmail.com
 
 ## 📌 Note
